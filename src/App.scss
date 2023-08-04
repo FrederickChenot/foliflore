@@ -1,0 +1,39 @@
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 20vmin;
+  fill: antiquewhite;
+  pointer-events: none;
+  animation: App-logo-spin infinite 20s linear;
+  transform-style: preserve-3d; /* Ajout pour la transformation 3D */
+  transform: rotateY(45deg); /* Ajout pour la transformation 3D */
+  stroke-width: 2rem; /* Ajout pour l'épaisseur de contour */
+
+}
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  color: #009393;
+}
+
+.App-link {
+  color: #F7931A;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
