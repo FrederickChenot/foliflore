@@ -13,13 +13,14 @@ function App() {
           modelPath={logo}
 
         />
+        Association FOLIFLORE en construction
         <a
           className="App-link"
           href="mailto:6thfc@proton.me"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Association FOLIFLORE en construction, Contact Admin
+          Contact Admin
         </a>
       </header>
     </div>
