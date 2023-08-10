@@ -1,21 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+// import logo from './logo.svg';
+import './App.scss';
+import ModelViewer from './components/ModelViewer/ModelViewer';
+import logo from './assets/logo1.glb';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+        <ModelViewer
+          scale={0.015}
+          height={800}
+          modelPath={logo}
+          position={[0, -3, 0]}
+
+        />
+        Association FOLIFLORE en construction
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="mailto:6thfc@proton.me"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Contact Admin
         </a>
       </header>
     </div>
