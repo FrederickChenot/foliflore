@@ -8,13 +8,28 @@ function App() {
     <div className="App">
       <header className="App-header">
         <ModelViewer
-          scale={0.015}
-          height={800}
+          scale={0.009}
+          height={600}
           modelPath={logo}
-          position={[0, -3, 0]}
+          position={[0, -1, 0]}
 
         />
-        Association FOLIFLORE en construction
+        <div className="App-header__presentation">
+          <li>
+            Association FOLIFLORE
+          </li>
+          <li>
+            Créer et entretenir un arboretum et un jardin forêt
+          </li>
+          <li>
+            promouvoir la biodiversité végétale
+          </li>
+          <li>sensibiliser à l'environnement</li>
+          <li>organiser des activités éducatives</li>
+          <li>créer un musée végétal</li>
+          <li>promouvoir des pratiques respectueuses</li>
+
+        </div>
         <a
           className="App-link"
           href="mailto:6thfc@proton.me"
