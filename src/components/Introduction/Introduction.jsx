@@ -4,25 +4,25 @@ import classnames from 'classnames';
 import './introduction.scss';
 
 function Introduction({ className, ...rest }) {
-  console.log('hello');
   return (
     <div
       className={classnames('introduction', className)}
       {...rest}
     >
       <li>
-        Association FOLIFLORE
+        <strong>Association FOLIFLORE</strong>
       </li>
+      <br />
       <li>
         Créer et entretenir un arboretum et un jardin forêt
       </li>
       <li>
-        promouvoir la biodiversité végétale
+        Promouvoir la biodiversité végétale
       </li>
-      <li>sensibiliser à l'environnement</li>
-      <li>organiser des activités éducatives</li>
-      <li>créer un musée végétal</li>
-      <li>promouvoir des pratiques respectueuses</li>
+      <li>Sensibiliser à l'environnement</li>
+      <li>Organiser des activités éducatives</li>
+      <li>Créer un musée végétal</li>
+      <li>Promouvoir des pratiques respectueuses</li>
 
     </div>
   );

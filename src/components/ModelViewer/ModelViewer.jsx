@@ -10,11 +10,13 @@ import './modelViewer.scss';
 function ModelViewer({
   modelPath,
   scale = 40,
+  width = 30,
   height = 150,
+  margin = 10,
   position = [0, 0, 0],
 }) {
   return (
-    <Canvas style={{ height: height }} className="canvas">
+    <Canvas style={{ height: height, width: width, margin: margin }} className="canvas">
       <ambientLight intensity={0.3} />
       <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
       <pointLight position={[-10, -10, -10]} />
@@ -35,6 +37,8 @@ ModelViewer.defaultProps = {
 ModelViewer.propTypes = {
   modelPath: PropTypes.string.isRequired,
   scale: PropTypes.number,
+  width: PropTypes.number.isRequired,
+  margin: PropTypes.number.isRequired,
   height: PropTypes.number,
   position: PropTypes.arrayOf(PropTypes.number),
 };

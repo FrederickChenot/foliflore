@@ -12,9 +12,11 @@ function App() {
       <header className="App-header">
         <ModelViewer
           scale={0.011}
-          height={200}
+          height={250}
+          width={50}
           modelPath={logo}
           position={[0, -2, 0]}
+          margin={3}
 
         />
         <Introduction />
