@@ -1,0 +1,9 @@
+.footer{
+	position: fixed;
+	display: flex;
+	bottom: 5px;
+	&-link{
+		display: flex;
+		color: orange;
+	}
+}

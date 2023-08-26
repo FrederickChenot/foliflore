@@ -2,43 +2,26 @@
 import './App.scss';
 import ModelViewer from './components/ModelViewer/ModelViewer';
 import logo from './assets/logo1.glb';
+import Footer from './components/Footer/Footer';
+import ImageList from './components/ImageList/ImageList';
+import Introduction from './components/Introduction/Introduction';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <ModelViewer
-          scale={0.009}
-          height={600}
+          scale={0.011}
+          height={200}
           modelPath={logo}
-          position={[0, -1, 0]}
+          position={[0, -2, 0]}
 
         />
-        <div className="App-header__presentation">
-          <li>
-            Association FOLIFLORE
-          </li>
-          <li>
-            Créer et entretenir un arboretum et un jardin forêt
-          </li>
-          <li>
-            promouvoir la biodiversité végétale
-          </li>
-          <li>sensibiliser à l'environnement</li>
-          <li>organiser des activités éducatives</li>
-          <li>créer un musée végétal</li>
-          <li>promouvoir des pratiques respectueuses</li>
-
-        </div>
-        <a
-          className="App-link"
-          href="mailto:6thfc@proton.me"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Contact Admin
-        </a>
+        <Introduction />
       </header>
+      <ImageList />
+
+      <Footer />
     </div>
   );
 }

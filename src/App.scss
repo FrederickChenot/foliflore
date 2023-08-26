@@ -1,6 +1,8 @@
 
 .App {
   text-align: center;
+  height: 100vh;
+  background-color: #FCFCFE;
 }
 
 .App-logo {
@@ -16,19 +18,13 @@
 
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  // min-height: 100vh;
+  height: max-content;
   display: flex;
-  flex-direction: column;
-  font-size: calc(10px + 2vmin);
-  color: #009393;
+  flex-direction: row;
+  // font-size: calc(10px + 2vmin);
+  color: black;
   
-
-   &__presentation{
-    list-style-type: none;
-    
-    
-   }
 }
 
 .App-link {
