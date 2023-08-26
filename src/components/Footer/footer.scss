@@ -1,9 +1,12 @@
 .footer{
 	position: fixed;
 	display: flex;
-	bottom: 5px;
-	&-link{
+	width: 100%;
+	justify-content: center;
+	bottom: 15px;
+		&-link{
 		display: flex;
 		color: orange;
+		align-items: center;
 	}
 }
