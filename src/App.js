@@ -13,7 +13,7 @@ function App() {
         <ModelViewer
           scale={0.011}
           height={250}
-          width={50}
+          width={125}
           modelPath={logo}
           position={[0, -2, 0]}
           margin={3}

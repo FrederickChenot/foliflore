@@ -14,15 +14,15 @@ function Introduction({ className, ...rest }) {
       </li>
       <br />
       <li>
-        Créer et entretenir un arboretum et un jardin forêt
+        Créer et entretenir un arboretum et un jardin forêt.
       </li>
       <li>
-        Promouvoir la biodiversité végétale
+        Promouvoir la biodiversité végétale.
       </li>
-      <li>Sensibiliser à l'environnement</li>
-      <li>Organiser des activités éducatives</li>
-      <li>Créer un musée végétal</li>
-      <li>Promouvoir des pratiques respectueuses</li>
+      <li>Sensibiliser à l'environnement.</li>
+      <li>Organiser des activités éducatives.</li>
+      <li>Créer un musée végétal.</li>
+      <li>Promouvoir des pratiques respectueuses.</li>
 
     </div>
   );
