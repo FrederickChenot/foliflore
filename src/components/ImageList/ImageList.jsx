@@ -1,57 +1,50 @@
 import Stack from '@mui/material/Stack';
-import Button from '@mui/material/Button';
-
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import Typography from '@mui/material/Typography';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import ImageListItemBar from '@mui/material/ImageListItemBar';
-import './imageList.scss';
-// import { useState } from 'react';
+import './imageList.scss'; // Assurez-vous d'importer votre fichier SCSS ici
 import itemData from '../Data/ImageList';
 
-export default function TitlebarBelowImageList() {
-  // const [target, setTarget] = useState('');
-  const handleClick = (description) => {
-    // event.preventDefault();
-    // setTarget(event.currentTarget);
-    // console.log('target event', event.currentTarget);
-    console.log('description', description);
-    // console.log(target);
-    // showDescription();
-  };
-
+function TitlebarBelowImageList() {
   return (
     <div className="Image-List">
-      <ImageList sx={{
-        width: 500,
-        height: 450,
-        // display: 'flex',
-        // justifyContent: ' center',
-      }}
-      >
+      <ImageList className="image-list-container">
         {itemData.map((item) => (
-          <ImageListItem key={item.img}>
+          <ImageListItem key={item.img} className="custom-image-list-item">
             <img
               src={`${item.img}?w=248&fit=crop&auto=format`}
               srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
               alt={item.title}
               loading="lazy"
+              className="custom-image"
             />
             <ImageListItemBar
-              title={item.title}
+              position="below"
               subtitle={(
                 <span>
-                  <Stack spacing={2} direction="row" display="flex" justifyContent="center">
-                    <Button
-                      variant="contained"
-                      onClick={() => handleClick(item.description)}
-                      style={{ backgroundColor: '#C3C3C3', color: 'black' }}
-                    >En savoir plus
-                    </Button>
-                  </Stack>
-                  {/* {item.description} */}
+                  <Stack spacing={2} direction="column" justifyContent="center" />
+                  <Accordion className="custom-accordion">
+                    <AccordionSummary
+                      expandIcon={<ExpandMoreIcon />}
+                      aria-controls="panel1a-content"
+                      id="panel1a-header"
+                      className="accordion-summary"
+                    >
+                      <Typography><strong>{item.title}</strong></Typography>
+                    </AccordionSummary>
+                    <AccordionDetails className="accordion-details">
+                      <Typography>
+                        {item.description}
+                      </Typography>
+                    </AccordionDetails>
+                  </Accordion>
                 </span>
-)}
-              position="below"
+              )}
             />
           </ImageListItem>
         ))}
@@ -59,3 +52,5 @@ export default function TitlebarBelowImageList() {
     </div>
   );
 }
+
+export default TitlebarBelowImageList;

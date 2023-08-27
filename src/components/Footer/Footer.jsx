@@ -4,7 +4,6 @@ import classnames from 'classnames';
 import './footer.scss';
 
 function Footer({ className, ...rest }) {
-  console.log('hello');
   return (
     <div
       className={classnames('footer', className)}
