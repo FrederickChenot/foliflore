@@ -13,8 +13,8 @@ const itemData = [
 
   },
   {
-    img: images[3],
-    imgPlus: imagesPlus[3],
+    img: images[1],
+    imgPlus: imagesPlus[1],
     title: 'Asiminier',
     author: 'FoliFlore',
     description: 'Ce petit arbre originaire d’Amérique du Nord de la famille des annonacées développe un fruit de couleur vert jaune à maturité qui est dégusté cru, en crème glacée, sorbet, boisson fermentée ou pâtisserie. Le goût rappelle à la fois l’ananas et la banane à la texture fondante.',

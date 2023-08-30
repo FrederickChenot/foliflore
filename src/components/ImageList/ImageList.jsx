@@ -16,6 +16,7 @@ function TitlebarBelowImageList() {
   const [expandedAccordion, setExpandedAccordion] = useState(null);
 
   const handleAccordionClick = (index) => {
+    console.log('index**********', index);
     if (index === expandedAccordion) {
       setExpandedAccordion(null);
     }
@@ -23,7 +24,6 @@ function TitlebarBelowImageList() {
       setExpandedAccordion(index);
     }
   };
-
   return (
     <div className="Image-List">
       <ImageList className="image-list-container">
@@ -70,14 +70,7 @@ function TitlebarBelowImageList() {
                       <AccordionDetails className="accordion-details">
                         <Typography>
                           {item.description}
-                          <img
-                            src={`${item.img}?w=248&fit=crop&auto=format`}
-                            srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
-                            alt={item.title}
-                            loading="lazy"
-                            className="custom-image"
-                          />
-                          {/* {itemData.map((item) => (
+                          <div className="img-list-detail">
                             <img
                               src={`${item.img}?w=248&fit=crop&auto=format`}
                               srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
@@ -85,7 +78,14 @@ function TitlebarBelowImageList() {
                               loading="lazy"
                               className="custom-image"
                             />
-                          ))} */}
+                            <img
+                              src={`${item.imgPlus}?w=248&fit=crop&auto=format`}
+                              srcSet={`${item.imgPlus}?w=248&fit=crop&auto=format&dpr=2 2x`}
+                              alt={item.title}
+                              loading="lazy"
+                              className="custom-image"
+                            />
+                          </div>
                         </Typography>
                       </AccordionDetails>
                     </Accordion>
