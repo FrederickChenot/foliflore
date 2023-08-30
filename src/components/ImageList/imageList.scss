@@ -57,10 +57,19 @@
       border: 1px solid #ddd;
       border-top: none;
       transition: background-color 0.3s;
-      max-height: 300px;
+      max-height: max-content;
 			overflow-x: hidden;
       overflow-y: auto; /* Utilisez le défilement vertical en cas de dépassement du contenu */
       white-space: normal; /* Permet au texte de s'afficher correctement sans être coupé */
     }
+  }
+  .image-container {
+    position: relative;
+  }
+
+  .custom-image {
+    width: 100%;
+    height: auto;
+    display: block;
   }
 }
