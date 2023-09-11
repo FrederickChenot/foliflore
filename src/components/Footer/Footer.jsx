@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import './footer.scss';
+import EmailLink from '../EmailLink/EmailLink';
 
 function Footer({ className, ...rest }) {
   return (
@@ -9,14 +10,7 @@ function Footer({ className, ...rest }) {
       className={classnames('footer', className)}
       {...rest}
     >
-      <a
-        className="footer-link"
-        href="mailto:6thfc@proton.me"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Contact Admin
-      </a>
+      <EmailLink />
     </div>
   );
 }

@@ -22,7 +22,7 @@ function Introduction({ className, ...rest }) {
             id="panel1a-header"
             className="accordion-summary"
           >
-            <Typography><strong>Association FOLIFLORE</strong></Typography>
+            <Typography><strong>Association FOLIFLORE **SITE EN CONSTRUCTION**</strong></Typography>
           </AccordionSummary>
           <AccordionDetails className="accordion-details">
             <Typography>
