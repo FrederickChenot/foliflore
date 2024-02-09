@@ -1,4 +1,3 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import './emailLink.scss';
@@ -11,7 +10,7 @@ function EmailLink({ className, email, ...rest }) {
     tempInput.select();
     document.execCommand('copy');
     document.body.removeChild(tempInput);
-    alert(`Adresse e-mail copiée : ${email}`);
+    // Nous ne faisons plus d'alerte ici
   };
 
   return (
@@ -21,7 +20,7 @@ function EmailLink({ className, email, ...rest }) {
       onClick={copyEmailAddress}
       {...rest}
     >
-      {email}
+      Contact par Mail
     </a>
   );
 }
@@ -35,4 +34,4 @@ EmailLink.defaultProps = {
   className: '',
 };
 
-export default React.memo(EmailLink);
+export default EmailLink;

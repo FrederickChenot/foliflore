@@ -5,12 +5,13 @@ import './footer.scss';
 import EmailLink from '../EmailLink/EmailLink';
 
 function Footer({ className, ...rest }) {
+  const myEmail = '6thfc@proton.me';
   return (
     <div
       className={classnames('footer', className)}
       {...rest}
     >
-      <EmailLink />
+      <EmailLink email={myEmail} />
     </div>
   );
 }
